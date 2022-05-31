@@ -53,7 +53,7 @@ nav a{
     align-items: center;
     text-decoration: underline 3.5px;
     font-size: 120%;
-    text-underline-offset: .3em;
+    text-underline-offset: .3em; /*sets the distance between the underline and word*/
     font-weight: bold;
     margin-right: 30px;
 
@@ -62,90 +62,155 @@ nav a:hover{
     color: rgb(245, 240, 240);/*makes the links white when hovered over*/
 }
 
+
 .hero{
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    background-attachment: fixed;
 
 }
+
 .hero img{
     width: 100%;
     height: 225px;
 
 }
+/*subtitle on the blue background*/
 .hero h2{
     background-color: var(--lightblue);
+    margin-top: -5rem;
+    margin-right: 10px;
     color: var(--darkgray);
-    padding-right: 20px;
     font-size: 200%;
-    align-items:center;
-    width:25%;
+    width: 100%;
+}
+/*start of main section*/
+.title {
+    border-right: 3px solid var(--darkgray);
+    min-height: 90%;
+    text-align: right;
+    padding-right: 40px;
+    min-width: 20%;
+    max-width: 20%;
 }
 
-.container{
+.title h2 {
+    color: var(--darkgray);
+    font-size: 48px;
+}
+
+.about {
     display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
-.container h2{
-    border-right: 5px solid var(--darkgray);
-    padding: 20px;
+.about p {
+    font-size: 20px;
+    padding: 0 30px;
+    line-height: 1.5;
+    width: 90%;
+}  
+
+.project {
+    border: 5px solid var(--lightblue);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
 }
 
-.container p {
-    margin: 15px;
-    font-size: 100%;
+.project:hover{
+    opacity: 1;
 }
 
 .work{
+    padding: 30px 0px;
     display: flex;
-    flex-wrap: wrap;
-}
-
-.work img{
-    width: 100px;
-    height: 100px;
-
-}
-
-
-footer {
-    display: flex;
-    bottom: 0%;
-    margin: 0 auto;
     justify-content: space-between;
-    align-items: center;
+
+}
+
+.grid{
     width: 100%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 10px;
 }
-footer h1{
-    font-size: 300%;
+
+.report{
+    width:100%;
+    height: 300px;
+}
+
+.Run {
+    width: 50%;
+    height: 150px;
+    margin: 20px;
+}
+
+.LED {
+    width: 50%;
+    height: 150px;
+    margin: 20px;
+}
+.mern {
+    width: 50%;
+    height: 150px;
+    margin: 20px;
+}
+.calc {
+    width: 50%;
+    height: 150px;
+    margin: 20px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.project-label{
+    background-color: var(--lightblue);
     color: var(--darkgray);
-    border-right: 5px solid var(--darkgray);
-    padding: 20px;
-    width: 25%;
+    font-size: 80%;
+    width: 35%;
+    margin: 20px;
+    margin-top: -8rem;
 }
+
+
+
+footer{
+    display:flex;
+    justify-content: space-between;
+    bottom: 0;
+}
+
 
 footer ul{
-    font-size: 150%;
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-    width: 75%
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
 }
 
 
-footer ul a {
+footer ul li a{
     color: var(--darkgray);
-    margin-right: 50px;
+    padding: 10px;
 }
 
-@media screen and (max-width: 992px) {
-    header,main{
-        flex-direction: column;
-    }
-    header h1{
-        width: 25%;
-        }
-
-    }
-    
+footer ul li a:hover{
+    color: white;
+}
