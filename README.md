@@ -13,11 +13,6 @@ During this challenge, I was given the task to create a porfolio showing off my 
 
 ### Website Link
 
-<<<<<<< HEAD:README.md
-
-=======
-(https://joshdunn57.github.io/Professional-Porfolio/)
->>>>>>> cd689055dba841526b5f9933456d8037c7e00096:assets/README.md
 
 
 ![image](https://user-images.githubusercontent.com/105329236/171511052-aa824882-d627-497b-98cb-4a9683577e1e.png)
