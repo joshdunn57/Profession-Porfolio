@@ -3,6 +3,10 @@
     --darkgray: rgb(58, 57, 57);
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     margin: 0;
@@ -133,7 +137,6 @@ nav a:hover{
     justify-content: space-between;
 
 }
-
 .grid{
     min-width: 100%;
     margin-left: 5%;
@@ -149,22 +152,14 @@ nav a:hover{
 }
 
 .Run {
+    display: flex;
     width: 50%;
     height: 150px;
     margin: 20px;
 }
 
 .LED {
-    width: 50%;
-    height: 150px;
-    margin: 20px;
-}
-.mern {
-    width: 50%;
-    height: 150px;
-    margin: 20px;
-}
-.calc {
+    display: flex;
     width: 50%;
     height: 150px;
     margin: 20px;
@@ -232,9 +227,9 @@ footer ul li a:hover{
         font-size: 16px;
         line-height: 1.6;
     }
-}
 
-@media screen and (max-width: 575px) {
+
+@media scren and (max-width: 575px) {
     header {
         justify-content: center;
         padding: 20px;
@@ -295,7 +290,7 @@ footer ul li a:hover{
         flex-direction: column;
     }
 
-    .content-wrapper {
+    .wrapper {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
